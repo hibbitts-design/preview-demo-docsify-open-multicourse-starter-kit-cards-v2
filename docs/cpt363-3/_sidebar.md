@@ -1,3 +1,5 @@
+<img src="/cpt363-3/images/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg" alt="CPT363-1 Header" class="banner-image" width="240" height="160">
+
 **CPT363-3**
 
 - [Course Welcome](cpt363-3/course-welcome)

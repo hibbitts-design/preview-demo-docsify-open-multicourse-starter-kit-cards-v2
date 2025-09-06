@@ -349,6 +349,15 @@
   height: auto;
 }
 
+.markdown-section .banner-image-sidebar {
+  width: 100%; /* fills full width of sidebar */
+  height: auto;
+  max-height: 150px; /* prevents it from getting too tall */
+  object-fit: cover; /* crops image to fit dimensions */
+  display: block;
+}
+
+
 .markdown-section .banner-image {
   width: 100%;
   height: 125px;
