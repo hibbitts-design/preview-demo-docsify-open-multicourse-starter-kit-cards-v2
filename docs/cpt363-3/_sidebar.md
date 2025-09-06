@@ -1,4 +1,4 @@
-<img src="/cpt363-3/images/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg" alt="CPT363-3 Header" class="banner-image" width="240" height="160">
+<img src="cpt363-3/images/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg" alt="CPT363-3 Header" class="banner-image" width="240" height="160">
 
 **CPT363-3**
 
