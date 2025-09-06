@@ -1,5 +1,7 @@
 # Courses
 
+---
+
 <div class="card-list">
   <div class="card">
 
