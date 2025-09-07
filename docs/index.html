@@ -243,24 +243,6 @@
               while (elements.length > 0) elements[0].remove();
             }
 
-            // Check if banner image exists as first child of sidebar-nav
-            const sidebar = document.getElementById('__sidebar');
-            const sidebarNav = sidebar.querySelector('.sidebar-nav');
-            const bannerImage = sidebarNav?.querySelector('.banner-image:first-child');
-            const mergedNav = sidebar.querySelector('.app-nav-merged');
-
-            if (bannerImage && mergedNav && sidebarNav) {
-                // Create a wrapper div with sidebar-nav class
-                const imageWrapper = document.createElement('div');
-                imageWrapper.classList.add('sidebar-nav');
-                
-                // Move image into the wrapper
-                imageWrapper.appendChild(bannerImage);
-                
-                // Insert the wrapper before merged nav
-                sidebar.insertBefore(imageWrapper, mergedNav);
-            }
-
             // Adjust left margin for optional ToC area if faded header image is present
             var hasImageFade = document.getElementsByClassName('header-image-fade');
             var hasNav = document.getElementsByClassName('nav');
