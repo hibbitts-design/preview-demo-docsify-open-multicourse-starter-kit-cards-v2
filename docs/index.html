@@ -229,9 +229,7 @@
             /* Javascript generated/assisted by Anthropic Claude AI */
             // Function to resolve image paths
             window.resolveImagePath = function(imagePath) {
-            const basePath = vm.config.basePath || 
-                            (window.location.pathname !== '/' ? 
-                              '/' + window.location.pathname.split('/')[1] : '');
+            const basePath = vm.config.basePath || (window.location.pathname !== '/' ? '/' + window.location.pathname.split('/')[1] : '');
             const cleanImagePath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
             return basePath ? `${basePath}/${cleanImagePath}` : cleanImagePath;
             };    
