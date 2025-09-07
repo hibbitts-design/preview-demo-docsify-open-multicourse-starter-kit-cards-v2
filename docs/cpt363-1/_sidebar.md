@@ -1,6 +1,4 @@
-<a data-href="cpt363-1/home">
-  <img data-src="cpt363-1/images/daria-nepriakhina-614246-unsplash.jpg" alt="CPT363-1 Header" class="banner-image sidebar-nav" width="235" height="155" style="border-radius: 6px 6px 0 0;">
-</a>
+<img data-src="cpt363-1/images/daria-nepriakhina-614246-unsplash.jpg" alt="CPT363-1 Header" class="banner-image sidebar-nav" width="235" height="155" style="border-radius: 6px 6px 0 0;">
 
 **CPT363-1**
 
