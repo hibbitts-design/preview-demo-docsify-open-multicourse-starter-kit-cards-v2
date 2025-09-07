@@ -121,7 +121,7 @@
       onlyCover: true,
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || false),
       loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar || false),
-      mergeNavbar: false,
+      mergeNavbar: true,
       externalLinkTarget: standalone ? '_top' : (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
 
@@ -241,6 +241,24 @@
               // console.log("header-image");
               const elements = document.getElementsByClassName("nav");
               while (elements.length > 0) elements[0].remove();
+            }
+
+            // Check if banner image exists as first child of sidebar-nav
+            const sidebar = document.getElementById('__sidebar');
+            const sidebarNav = sidebar.querySelector('.sidebar-nav');
+            const bannerImage = sidebarNav?.querySelector('.banner-image:first-child');
+            const mergedNav = sidebar.querySelector('.app-nav-merged');
+
+            if (bannerImage && mergedNav && sidebarNav) {
+                // Create a wrapper div with sidebar-nav class
+                const imageWrapper = document.createElement('div');
+                imageWrapper.classList.add('sidebar-nav');
+                
+                // Move image into the wrapper
+                imageWrapper.appendChild(bannerImage);
+                
+                // Insert the wrapper before merged nav
+                sidebar.insertBefore(imageWrapper, mergedNav);
             }
 
             // Adjust left margin for optional ToC area if faded header image is present
