@@ -24,7 +24,6 @@
 * Updated support of Docsify config topMargin to CSS var `scroll-padding-top`
 * Move responsive table layout to core CSS so tables render correctly
 * Improve toc and toc-narrow display
-* Point docsify CDN links at self-hosted Docsify fork
 
 **Bugfix:**
 * Handle use of Coverpage title link with duplicate id
